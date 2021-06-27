@@ -15,6 +15,7 @@ export function Home() {
   async function handleCreateRoom() {
     //se o usuário não estiver logado
     if (!user) {
+      //o código abaixo do await só executa quando ele for executado com sucesso
       await signInWithGoogle()
     }
 
